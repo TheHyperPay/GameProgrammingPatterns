@@ -1,6 +1,19 @@
 ﻿#include "stdafx.h"
 
-int main()
+int main() 
 {
-    std::cout << "Hello World!\n";
+#ifdef COMMAND_PATTERN
+    AlphaUser alpha("Alpha");
+    BravoUser bravo("Bravo");
+
+    InputMap* inputMap = new InputMap();
+    inputMap->handle("charge", alpha);
+    inputMap->handle("retreat", bravo);
+    inputMap->handle("stab", alpha);
+    inputMap->handle("unknown", bravo);
+
+    delete inputMap;
+#endif
+
+    return 0;
 }

@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Scripts">
+      <UniqueIdentifier>{86bec17d-89f9-4ee3-afcd-604a36582708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Example">
+      <UniqueIdentifier>{bc823f33-0b70-45a0-b368-9e067309bef7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameProgrammingPatterns.cpp">
@@ -21,10 +27,16 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Example\CommandPattern.cpp">
+      <Filter>소스 파일\Example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Scripts\CommandPattern.h">
+      <Filter>헤더 파일\Scripts</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
